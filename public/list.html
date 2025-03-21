@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Người Dùng</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="#" id="logout">Đăng xuất</a>
+        </nav>
+    </header>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="userList"></tbody>
+    </table>
+    
+
+    <!-- Phân trang -->
+    <div id="pagination" class="pagination-wrapper">
+        <div class="pagination-container">
+            <button class="pagination-btn"><</button>
+            <div class="pagination-buttons">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+            </div>
+            <button class="pagination-btn">></button>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - EX1</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
